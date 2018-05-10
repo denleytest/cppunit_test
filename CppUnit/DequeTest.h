@@ -20,8 +20,8 @@ class DequeTest : public CppUnit::TestFixture {
    
 public:
   DequeTest() : d(NULL) {}
-  void setUp();
-  void tearDown();
+  virtual void setUp();
+  virtual void tearDown();
   
   void testConstruction();
   void testPush_back();
@@ -33,6 +33,7 @@ public:
   void testCopy_construction();
   void testAssignment_operator();
   void testDont_try_suicide();
+  
 private:
   Deque* d;
 };
