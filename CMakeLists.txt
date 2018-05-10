@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 2.6)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
+SET(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
+find_package(CppUnitLite)
+if (CppUnitLite_FOUND)
+    add_subdirectory(CppUnitLite)
+else (CppUnitLite_FOUND)
+   MESSAGE(SEND_ERROR "Could not find CppUnitLite library, please visit https://github.com/denleyhsiao/CppUnitLite ...")    
+endif (CppUnitLite_FOUND)
