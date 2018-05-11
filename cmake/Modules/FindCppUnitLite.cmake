@@ -1,4 +1,4 @@
-FIND_PATH(CppUnitLite_INCLUDE_DIR TestHarness.h /usr/include/CppUnitLite /usr/local/include/CppUnitLite)
+FIND_PATH(CppUnitLite_INCLUDE_DIR CppUnitLite.h /usr/include/CppUnitLite /usr/local/include/CppUnitLite)
 FIND_LIBRARY(CppUnitLite_LIBRARY NAMES CppUnitLite PATH /usr/lib /usr/local/lib)
 IF (CppUnitLite_INCLUDE_DIR AND CppUnitLite_LIBRARY)
  SET(CppUnitLite_FOUND TRUE)
